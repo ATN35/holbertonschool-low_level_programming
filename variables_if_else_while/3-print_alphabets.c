@@ -1,28 +1,28 @@
-es (26 sloc)  481 Bytes
-
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- *main - print 00 to 99 with no duplicate digits or combos: no 11, no 10 (01)
+ * main - Entry point
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int ones;
-	int tens;
-
-	for (tens = '0'; tens <= '9'; tens++) /*increment tens*/
+	int i;
+	for (i = 0; i < 100 ; i++)
 		}
-		for (ones = (tens + 1); ones <= '9'; ones++) /*one's ten+1*/
-			if (tens != '8' || ones != '9') /*print commas*/
-			{
-				putchar(',');
-				putchar(' ');
-			}
+		if (i / 10) < (i % 10)
+		{
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+		}
+		if (i < 89 && (i / 10) < (i % 10)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 			{
 	putchar('\n');
-
 	return (0);
 }
