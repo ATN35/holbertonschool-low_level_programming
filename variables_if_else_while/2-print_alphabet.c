@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* Main - We use the function putchar for generate an alphabet in lowercase
+*main - Print the alphabet
 *
-* Return : We got alphabet in lower case !
+*Return:return 0
 */
 int main(void)
 {
