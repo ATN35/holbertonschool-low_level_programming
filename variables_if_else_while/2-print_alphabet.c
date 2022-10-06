@@ -1,26 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 00 to 99
- * Return: Always 0 (success)
+ * Main - We use the function putchar for generate an alphabet in lowercase
+ *
+ * Return : We got alphabet in lower case !
  */
+
 int main(void)
 {
-	int n, m;
+	char a[26] = "abcdefghijklmnopqrstuvwxyz";
+	init i;
 
-	for (n = 48; n <= 57; n++)
+	for (i = 0 ; i < 26 ; i++)
 	{
-		for (m = 48; m <= 57; m++)
-		{
-			putchar(n);
-			putchar(m);
-			if (n != 57 || m != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+		putchar(a[i]);
 	}
 	putchar('\n');
-	return (0);
-}
+	return (0)
+		
