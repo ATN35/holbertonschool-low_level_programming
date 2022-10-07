@@ -1,16 +1,24 @@
 #include "main.h"
 
 /**
- * add - Main function
- * @x: x
- * @y: y
- * Return: always 0
+ * print_alphabet_x10 - Entry point
+ *
+ * Return: Always 0.
  */
-
-int add(int x, int y)
+void print_alphabet_x10(void)
 {
-	int c;
+	int alpha;
+	int bet = 0;
 
-	c = x + y;
-	return (c);
+	while (bet <= 9)
+	{
+		alpha = 'a';
+		while (alpha <= 'z')
+		{
+			_putchar(alpha);
+			alpha++;
+		}
+		bet++;
+		_putchar('\n');
+	}
 }
