@@ -1,32 +1,25 @@
 #include "main.h"
 
 /**
- * print_last_digit - Entry point
+ * jack_bauer - Entry point
  *
- *@l: description of l
- *
- * Return: 0.
+ * Return: Always 0.
  */
-int print_last_digit(int l)
+void jack_bauer(void)
 {
-	if (l > 0)
+	int h;
+	int min;
+
+	for (h = 0; h <= 23; h++)
 	{
-		l = l % 10;
-		_putchar('0' + l);
+		for (min = 0; min <= 59; min++)
+		{
+			_putchar(h / 10 + '0');
+			_putchar(h % 10 + '0');
+			_putchar(':');
+			_putchar(min / 10 + '0');
+			_putchar(min % 10 + '0');
+			_putchar('\n');
+		}
 	}
-	else if (l < 0)
-	{
-		l = l % 10 * -1;
-		_putchar('0' + l);
-	}
-	else if (l == 0)
-	{
-		l = 0;
-		_putchar('0' + l);
-	}
-	else
-	{
-		return (0);
-	}
-	return (l);
 }
