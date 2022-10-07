@@ -18,4 +18,3 @@ void print_numbers(void)
 }
 Footer
 © 2022 GitHub, Inc.
-	
