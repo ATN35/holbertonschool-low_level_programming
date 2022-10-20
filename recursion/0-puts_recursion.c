@@ -6,13 +6,13 @@
  * Return: Always 0.
  */
 
-void _puts_recursion(char *s);
+void _puts_recursion(char *s)
 {
 if
 {
-putchar(*s);
-_puts_recursion(*s++);
-	}
+	_putchar(*s);
+	_puts_recursion(s++);
+}
 else
-	putchar('\n');
+	_putchar('\n');
 }
