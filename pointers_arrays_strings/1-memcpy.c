@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * _memcpy - entry point
+ * _memcpy - a function that copies memory area
  * @dest: destination
  * @src: source
  * @n: n
