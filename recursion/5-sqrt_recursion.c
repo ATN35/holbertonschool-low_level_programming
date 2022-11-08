@@ -3,7 +3,7 @@
 /**
  *_sqrt_recursion - a function that returns the natural square root of a number
  * @n: n
- * Return: 0
+ * Return: 0, 1, -1
  */
 
 int _sqrt_recursion(int n)
@@ -12,8 +12,7 @@ int _sqrt_recursion(int n)
 		return (0);
 	else if (n == 1)
 		return (1);
-	else if (n < 0)
-		return (-1);
-	else
-		return (0(n, 1));
+	else (n < 0)
+		     ;
+	return (-1);
 }
