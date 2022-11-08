@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *leet - a function that encodes a string into 1337
+ *leet - a function
  *@str: str
  *Return: Nothing
  */
 
-char *leet(char *str)
+char *cap_string(char *str)
 {
 	int a = 0, b;
 	char d1[13] = {' ', '\n', '\t', ',', ';', '.', '!', '?',
