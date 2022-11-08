@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *leet - a function
+ *cap_string - a function
  *@str: str
- *Return: Nothing
+ *Return: str
  */
 
 char *cap_string(char *str)
@@ -26,5 +26,5 @@ char *cap_string(char *str)
 		}
 		a++;
 	}
-	return (0);
+	return (str);
 }
