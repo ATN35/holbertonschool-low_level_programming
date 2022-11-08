@@ -3,7 +3,7 @@
 /**
  *leet - a function that encodes a string into 1337
  *@str: str
- *Return: str
+ *Return: Nothing
  */
 
 char *leet(char *str)
@@ -26,5 +26,5 @@ char *leet(char *str)
 		}
 		a++;
 	}
-	return (str);
+	return (0);
 }
