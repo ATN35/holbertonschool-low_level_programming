@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *strspn - returns number of bytes in the initial sengment s
+ *_strspn - returns number of bytes in the initial sengment s
  *@s: s
  *@accept: accept
  *Return: i
