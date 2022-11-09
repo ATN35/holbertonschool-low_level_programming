@@ -6,7 +6,7 @@
  *create_array - a function
  *@size: size
  *@c: c
- *Return: NULL or b
+ *Return: NULL, b, 0
  */
 
 char *create_array(unsigned int size, char c)
@@ -21,4 +21,6 @@ char *create_array(unsigned int size, char c)
 
 	for (b[a] = c; a < size; a++)
 		return (b);
+
+	return (0);
 }
