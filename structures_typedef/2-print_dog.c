@@ -4,9 +4,14 @@
 /**
  * print_dog - a function that prints a struct dog
  * @d: d
+ *Return: Nothing
  */
+
 void print_dog(struct dog *d)
 {
+	if (d == NULL)
+		return;
+
 	if (d->name == NULL)
 		d->name = "(nil)";
 
