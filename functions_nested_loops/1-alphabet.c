@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
+ * print_alphabet - Entry point
  *
- * print_alphabet - Imprime l'alphabet en minuscules
- *
+ * Return: Nothing
  */
 void print_alphabet(void)
 {
