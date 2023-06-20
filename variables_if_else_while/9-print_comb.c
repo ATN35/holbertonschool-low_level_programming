@@ -1,22 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * *main - Entry point
  *
  * Return: 0
  */
 int main(void)
 {
-int i;
+int num;
 
-for (i = 0; i < 10; i++)
+for (num = '0'; num <= '9'; num++)
 {
-putchar(i + '0');
+putchar(num);
+
+if (num != '9')
+{
 putchar(',');
 putchar(' ');
-if (i != 9)
+}
 }
 putchar('\n');
-
 return (0);
 }
