@@ -11,11 +11,12 @@ int i;
 
 for (i = 0; i < 10; i++)
 {
-putchar('0' + i);
+putchar(i + '0');
 }
-for (i = 0; i < 6; i++)
+if (i != 9)
 {
-putchar('a' + i);
+putchar(',');
+putchar(' ');
 }
 putchar('\n');
 
