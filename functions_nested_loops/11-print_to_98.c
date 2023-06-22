@@ -1,24 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - Prints all natural numbers from n to 98
- * @n: Starting number
+ * @n: integer argument
  *
  * Return: Nothing
  */
 void print_to_98(int n)
 {
-	while (n != 98)
+	while (n < 98)
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-		_putchar(',');
-		_putchar(' ');
-
-		n = (n > 98) ? n - 1 : n + 1;
+		printf("%d, ", n);
+		n++;
 	}
 
-	_putchar('9');
-	_putchar('8');
-	_putchar('\n');
+	while (n > 98)
+	{
+		printf("%d, ", n);
+		n--;
+	}
+
+	if (n == 98)
+		printf("%d", n);
+
+	printf("\n");
 }
