@@ -2,8 +2,6 @@
 
 /**
  * print_numbers - Print numbers from 0 to 9
- * @i: variable used to iterate over digits from 0 to 9
- *
  * Return: Nothing
  */
 void print_numbers(void)
