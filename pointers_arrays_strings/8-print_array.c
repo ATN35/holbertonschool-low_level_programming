@@ -14,10 +14,21 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		putchar("%d", a[i]);
+		int num = a[i];
+
+		if (num < 0)
+		{
+			num = -num;
+			_putchar('-');
+		}
+
+		if (num / 10)
+			print_number(num / 10);
+
+		_putchar('0' + num % 10);
 
 		if (i < n - 1)
-			putchar(", ");
+			_putchar(',');
 	}
-	putchar("\n");
+	_putchar('\n');
 }
