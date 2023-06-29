@@ -25,17 +25,18 @@ int _atoi(char *s)
 	while (*s >= '0' && *s <= '9')
 	{
 
-		if (result > INT_MAX / 10 || (result == INT_MAX / 10 && (*s - '0') > INT_MAX % 10))
+		if (result > INT_MAX / 10 ||
+		    (result == INT_MAX / 10 && (*s - '0') > INT_MAX % 10))
 		{
 			if (sign == 1)
-				return INT_MAX;
+				return (INT_MAX);
 			else
-				return INT_MIN;
+				return (INT_MIN);
 		}
 
 		result = result * 10 + (*s - '0');
 		s++;
 	}
 
-	return result * sign;
+	return (result * sign);
 }
