@@ -14,21 +14,11 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		int num = a[i];
-
-		if (num < 0)
+		printf("%d", a[i]);
+		if (i != (n - 1))
 		{
-			num = -num;
-			_putchar('-');
+			printf(", ");
 		}
-
-		if (num / 10)
-			print_number(num / 10);
-
-		_putchar('0' + num % 10);
-
-		if (i < n - 1)
-			_putchar(',');
 	}
-	_putchar('\n');
+	putchar('\n');
 }
