@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * list_len - function that counts the number of elements in a linked list
